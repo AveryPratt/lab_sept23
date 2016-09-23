@@ -83,7 +83,7 @@ var testArray = [2,3,4]; //eslint-disable-line
 function sumArray(testArray){ //eslint-disable-line
   var sum = 0;
   for(var i = 0; i < testArray.length; i++){
-    sum += testArray[i];
+    sum = sum(sum, testArray[i]);
   }
   var message = testArray + ' was passed in as an array of numbers, and ' + sum + ' is their sum.';
   return [sum, message];
